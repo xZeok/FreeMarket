@@ -4,7 +4,7 @@ import SwiftUI
 struct FreeMarketApp: App {
     var body: some Scene {
         WindowGroup {
-            //SearchView()
+            SearchView()
         }
     }
 }
