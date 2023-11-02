@@ -10,7 +10,6 @@
 		7D2363192AF2DF74000498C3 /* FreeMarketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2363182AF2DF74000498C3 /* FreeMarketApp.swift */; };
 		7D23631D2AF2DF76000498C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D23631C2AF2DF76000498C3 /* Assets.xcassets */; };
 		7D2363212AF2DF76000498C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D2363202AF2DF76000498C3 /* Preview Assets.xcassets */; };
-		7D23632B2AF2DF77000498C3 /* FreeMarketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D23632A2AF2DF77000498C3 /* FreeMarketTests.swift */; };
 		7D2363352AF2DF77000498C3 /* FreeMarketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2363342AF2DF77000498C3 /* FreeMarketUITests.swift */; };
 		7D2363372AF2DF77000498C3 /* FreeMarketUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2363362AF2DF77000498C3 /* FreeMarketUITestsLaunchTests.swift */; };
 		7D2363492AF2F6DE000498C3 /* FSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2363462AF2F6DE000498C3 /* FSError.swift */; };
@@ -34,6 +33,8 @@
 		7D2363752AF31A16000498C3 /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2363732AF31A15000498C3 /* ItemDetailView.swift */; };
 		7D2363792AF31A3C000498C3 /* MockSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2363772AF31A3C000498C3 /* MockSearchResponse.swift */; };
 		7D23637A2AF31A3C000498C3 /* MockItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2363782AF31A3C000498C3 /* MockItem.swift */; };
+		7D2363822AF343D1000498C3 /* MockSearchViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2363802AF343D1000498C3 /* MockSearchViewService.swift */; };
+		7D2363832AF343D1000498C3 /* SearchViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2363812AF343D1000498C3 /* SearchViewModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +61,6 @@
 		7D23631E2AF2DF76000498C3 /* FreeMarket.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FreeMarket.entitlements; sourceTree = "<group>"; };
 		7D2363202AF2DF76000498C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7D2363262AF2DF77000498C3 /* FreeMarketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeMarketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D23632A2AF2DF77000498C3 /* FreeMarketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeMarketTests.swift; sourceTree = "<group>"; };
 		7D2363302AF2DF77000498C3 /* FreeMarketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeMarketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D2363342AF2DF77000498C3 /* FreeMarketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeMarketUITests.swift; sourceTree = "<group>"; };
 		7D2363362AF2DF77000498C3 /* FreeMarketUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeMarketUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -86,6 +86,8 @@
 		7D2363772AF31A3C000498C3 /* MockSearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSearchResponse.swift; sourceTree = "<group>"; };
 		7D2363782AF31A3C000498C3 /* MockItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockItem.swift; sourceTree = "<group>"; };
 		7D23637E2AF33F4E000498C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7D2363802AF343D1000498C3 /* MockSearchViewService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSearchViewService.swift; sourceTree = "<group>"; };
+		7D2363812AF343D1000498C3 /* SearchViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +160,8 @@
 		7D2363292AF2DF77000498C3 /* FreeMarketTests */ = {
 			isa = PBXGroup;
 			children = (
-				7D23632A2AF2DF77000498C3 /* FreeMarketTests.swift */,
+				7D2363812AF343D1000498C3 /* SearchViewModelTest.swift */,
+				7D23637F2AF343D1000498C3 /* Mocks */,
 			);
 			path = FreeMarketTests;
 			sourceTree = "<group>";
@@ -303,6 +306,14 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		7D23637F2AF343D1000498C3 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				7D2363802AF343D1000498C3 /* MockSearchViewService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -374,6 +385,7 @@
 					};
 					7D2363252AF2DF77000498C3 = {
 						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
 						TestTargetID = 7D2363142AF2DF74000498C3;
 					};
 					7D23632F2AF2DF77000498C3 = {
@@ -462,7 +474,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D23632B2AF2DF77000498C3 /* FreeMarketTests.swift in Sources */,
+				7D2363832AF343D1000498C3 /* SearchViewModelTest.swift in Sources */,
+				7D2363822AF343D1000498C3 /* MockSearchViewService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -688,6 +701,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LMVZT5B6P9;
@@ -700,6 +714,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeMarket.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FreeMarket";
@@ -711,6 +726,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LMVZT5B6P9;

@@ -1,6 +1,6 @@
 import UIKit
 
-class NetworkManager: NSObject {
+final class NetworkManager: NSObject {
     
     // MARK: - Properties.
     
